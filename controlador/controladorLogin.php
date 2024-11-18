@@ -1,4 +1,5 @@
 <?php
+ob_start();
 session_start();
 if(!empty($_POST["btningresar"])){
     if (!empty($_POST["usuario"]) and !empty($_POST["contraseña"])) {
