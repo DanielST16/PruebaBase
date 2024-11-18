@@ -6,7 +6,7 @@ if(!empty($_POST["btningresar"])){
         $contraseña = $_POST["contraseña"];
         
         // Consultar los datos del usuario
-        $sql = $conexion->query("SELECT * FROM usuario WHERE usuario = '$usuario'");
+        $sql = $conexion->query("SELECT * FROM Usuario WHERE Usuario = '$usuario'");
         
         if ($datos = $sql->fetch_object()) {
             // Verificar si la contraseña es correcta usando password_verify
@@ -23,7 +23,7 @@ if(!empty($_POST["btningresar"])){
 
                 
                 // Actualizar el último acceso del usuario
-                $conexion->query("UPDATE usuario SET Fecha_Ultimo_Acceso = NOW() WHERE usuario = '$usuario'");
+                $conexion->query("UPDATE Usuario SET Fecha_Ultimo_Acceso = NOW() WHERE Usuario = '$usuario'");
                 
                 // Redirigir al inicio
                 header("location:../inicio.php");
