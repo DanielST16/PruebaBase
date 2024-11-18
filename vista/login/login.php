@@ -12,7 +12,7 @@
 
 <body>
     <div class="wrapper">
-        <form action="" class="form" method="POST">
+        <form action="../../controlador/controladorLogin.php" class="form" method="POST">
             <h1 class="tittle">Inicio</h1>
 
             <!-- Mostrar mensaje de error o éxito -->
@@ -35,7 +35,7 @@
                 <input type="password" name="contraseña" class="input" placeholder="Contraseña" required>
                 <i class="fa-solid- fa-lock"></i>
             </div>
-            <input type="submit" name="btningresar" value="Iniciar Sesión" class="submit" />
+            <button type="submit" name="btningresar" value="Iniciar Sesión" class="submit">Iniciar Sesion</button>
             <p class="footer">¿No tienes cuenta? <a href="Registro.php" class="link">Por favor, regístrate</a></p>
         </form>
 
